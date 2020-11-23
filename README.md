@@ -14,5 +14,5 @@ win+alt+m : Mute All But Current Desktop
 win+alt+u : UnmuteAll
 
 f3 : exitApp\
-you can comment this line like this (to not exitApp when you pressf3)\
+you can comment this line like this (to not exitApp when you press f3)\
 ; f3::Exitapp
