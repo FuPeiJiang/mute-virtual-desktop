@@ -1,3 +1,5 @@
+nircmd.exe needs to be in the same folder
+
 ctrl+Numpad1 : mute desktop 1\
 ctrl+Numpad2 : mute desktop 2\
 ctrl+Numpad3 : mute desktop 3
