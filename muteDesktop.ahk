@@ -65,9 +65,10 @@ muteOrUnmuteDesktop(desktopNumber, hasVolume:=true)
         if (desktopOfWindow=desktopNumber)
         {
             DetectHiddenWindows, on
-            WinGet, windowProcessName, ProcessName, % "ahk_id " id
-            if (windowProcessName) {
-                toRun=nircmd.exe setappvolume %windowProcessName% %hasVolume%
+            WinGet, windowPID, PID, % "ahk_id " id
+            if (windowPID) {
+                toRun=nircmd.exe setappvolume /%windowPID% %hasVolume%
+                ; p(toRun)
                 Run, %toRun%
 
             }
